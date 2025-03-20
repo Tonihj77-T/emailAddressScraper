@@ -33,7 +33,7 @@ class EmailScraper:
             if html_content:
                 return self.extract_emails(html_content)
         except Exception as e:
-            print(f"Error scraping {url}: {e}")
+            print(f"Error scraping the URL: {url}: {e}")
         return []
     
     def scrape_from_file(self, input_file, output_file):
